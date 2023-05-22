@@ -38,7 +38,7 @@ body:
       placeholder: e.g. Bambu Studio 1.6.2.4
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: system_info
     attributes:
       label: System Information
@@ -58,14 +58,14 @@ body:
       placeholder: Bambu Lab X1 Carbon
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: app_from
     attributes:
       label: Where is the application from?
       description: please confirm where is your Bambu Studio from
       placeholder: |
-        From Bambu Lab Official website//Bambu Lab github releases/OTA upgrading(popup box in Bambu Studio)
-        Built by yourself or others
+        e.g. Bambu Lab Official website, Bambu Lab github releases, OTA upgrading(popup box in Bambu Studio)
+        e.g. Built from source
     validations:
       required: true
 
