@@ -64,8 +64,8 @@ body:
       label: Where is the application from?
       description: please confirm where is your Bambu Studio from
       placeholder: |
-      From Bambu Lab Official website//Bambu Lab github releases/OTA upgrading(popup box in Bambu Studio)
-      Built by yourself or others
+        From Bambu Lab Official website//Bambu Lab github releases/OTA upgrading(popup box in Bambu Studio)
+        Built by yourself or others
     validations:
       required: true
 
