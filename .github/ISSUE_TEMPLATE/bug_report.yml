@@ -9,18 +9,18 @@ body:
     id: what-happened
     attributes:
       label: Description of the bug
-      description: What happened? Please, enclose a screenshot whenever possible (even when you think the description is clear). What did you expect to happen? In case of 3D rendering issues, please attach the content of menu Help -> System Info dialog.
+      description: What happened? Please, enclose a screenshot whenever possible (even when you think the description is clear). What did you expect to happen?
       placeholder: |
         What is the problem?
         What did you expect?
-        You paste or drop screenshots here 
+        Paste or drop screenshots here 
     validations:
       required: true
   - type: textarea
     id: to_reproduce
     attributes:
       label: Project file & How to reproduce
-      description: "*Please* upload a ZIP archive containing the project file used when the problem arise. Please export it just before the problem occurs. Even if you did nothing and/or there is no object, export it! (it contains your current configuration)."
+      description: "*Please* upload a ZIP archive containing the project file used when the problem arise. Please export it just before or after the problem occurs. Even if you did nothing and/or there is no object, export it! (We need the configurations in project file)."
       placeholder: |
         `File`->`Save project as...` then zip it & drop it here
         Also, if needed include the steps to reproduce the bug:
@@ -30,28 +30,24 @@ body:
         4. See error
     validations:
       required: true
-  - type: checkboxes
-    attributes:
-      label: Checklist of files included above
-      options:
-      - label: Project file
-      - label: Screenshot
-    validations:
-      required: true
   - type: input
-    id: version
+    id: Name_Version
     attributes:
-      label: Version of Bambu Studio
+      label: Name & Version
       description: What version of Bambu Studio are you running? You can see the full version in `Help` -> `About Bambu Studio`.
-      placeholder: e.g. Version 1.6.2.4
+      placeholder: e.g. Bambu Studio 1.6.2.4
     validations:
       required: true
   - type: input
-    id: os
+    id: system_info
     attributes:
-      label: Operating system
-      description: with the version if possible
-      placeholder: e.g. Windows 7/8/10/11 ... , Ubuntu 22.04/Fedora 36 ... , macOS 10.15/11.1/12.3 ...
+      label: System Information
+      description: Which OS version are you using? For the performance issue, please also show the CPU、Memory information; For the 3D Rendering issue, please also show the Display Card information.
+      placeholder: |
+        OS: Windows 7/8/10/11 ... , Ubuntu 22.04/Fedora 36 ... , macOS 10.15/11.1/12.3 ...
+        CPU: 11th gen intel r core tm i7-1185g7/amd ryzen 7 6800h/...
+        Memory: 32/16 GB...
+        Display Card: NVIDIA Quadro P400/...
     validations:
       required: true
   - type: input
@@ -60,6 +56,16 @@ body:
       label: Printer model
       description: Please, fill this in even when it seems irrelevant.
       placeholder: Bambu Lab X1 Carbon
+    validations:
+      required: true
+  - type: input
+    id: app_from
+    attributes:
+      label: Where is the application from?
+      description: please confirm where is your Bambu Studio from
+      placeholder: |
+      From Bambu Lab Official website//Bambu Lab github releases/OTA upgrading(popup box in Bambu Studio)
+      Built by yourself or others
     validations:
       required: true
 
