@@ -31,10 +31,10 @@ body:
     validations:
       required: true
   - type: input
-    id: Name_Version
+    id: version
     attributes:
-      label: Name & Version
-      description: What version of Bambu Studio are you running? You can see the full version in `Help` -> `About Bambu Studio`.
+      label: Version
+      description: Which version of Bambu Studio are you running? You can see the full version in `Help` -> `About Bambu Studio`.
       placeholder: e.g. Bambu Studio 1.6.2.4
     validations:
       required: true
