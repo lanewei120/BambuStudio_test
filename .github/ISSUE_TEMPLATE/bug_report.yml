@@ -36,3 +36,22 @@ body:
         OS: Windows 7/8/10/11 ... , Ubuntu 22.04/Fedora 36 ... , macOS 10.15/11.1/12.3 ...
     validations:
       required: true
+  - type: textarea
+    id: system_info
+    attributes:
+      label: Additional system information
+      description: For the performance issue, please also show the CPU、Memory information; For the 3D Rendering issue, please also show the Display Card information.
+      placeholder: |
+        CPU: 11th gen intel r core tm i7-1185g7/amd ryzen 7 6800h/...
+        Memory: 32/16 GB...
+        Display Card: NVIDIA Quadro P400/...
+    validations:
+      required: false
+  - type: input
+    id: printer
+    attributes:
+      label: Printer
+      description: Which printer was selected
+      placeholder: Bambu Lab X1 series/Bambu Lab P1P/...
+    validations:
+      required: true
