@@ -81,3 +81,17 @@ body:
       description: What should happen after the above steps?
     validations:
       required: true
+  - type: markdown
+    id: file_required
+    attributes:
+      value: |
+        Please be sure to add the following files:
+          * Please upload a ZIP archive containing the **project file** used when the problem arise. Please export it just before or after the problem occurs. Even if you did nothing and/or there is no object, export it! (We need the configurations in project file).
+            You can export the project file from the application menu in `File`->`Save project as...`, then zip it
+          * A **log file** for crashes and similar issues.
+            You can find your log file here:
+            Windows: `%APPDATA%\BambuStudio\log` or usually `C:\Users\\<your username>\AppData\Roaming\BambuStudio\log`
+            MacOS: `$USER/Library/Application Support/BambuStudio/log`
+            Linux: `$USER/.config/BambuStudio/log
+            If the Cura user interface still starts, you can also reach this directory from the application menu in `Help` -> `Show Configuration Folder`
+            You can zip the log directory, or just select the newest logs when this issue happens, and zip them
